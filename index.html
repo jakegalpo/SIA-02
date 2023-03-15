@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Validation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="navigation">
+    <h1>CSC Online Registration, Appointment and Scheduling System</h1>
+    </div>
+
+    <div class="container">
+      <form autocomplete="off">
+        <h2>OWNER'S INFORMATION</h2><br>
+        <h4>Application pertains to SOLE Proprietorship Registration.</h4>
+        
+    <div class="input-section">
+
+    <div class="input-section">
+          <label>First Name <span class="required-color"></span></label>
+          <input type="text" placeholder="Enter First Name"id="first-name-input"required/>
+          <span id="first-name-error" class="hide required-color error-message">Invalid Input</span>
+          <span id="empty-first-name" class="hide required-color error-message">First Name Cannot Be Empty</span>
+    </div>
+    <div class="input-section">
+    <div class="input-section">
+          <label>Last Name <span class="required-color"></span></label>
+          <input type="text" placeholder="Enter Last Name"id="last-name-input"required/>
+          <span id="last-name-error" class="hide required-color error-message" ></span>
+          <span id="empty-last-name" class="hide required-color error-message">Last Name Cannot Be Empty</span>
+          <span id="lastname-error" class="hide required-color error-message">
+            lastname Should Have Letter, Special symbols, Numbers And Length >=
+            2
+          </span>
+      </div>
+
+     <div>
+        <label>Middle Name <span class="required-color">*</span></label>
+          <input
+            type="text"
+            placeholder="Enter Middle Name"
+            id="middle-name-input"
+            required
+          />
+          <span id="middle-name-error" class="hide required-color error-message"
+            >Invalid Input</span
+          >
+          <span id="empty-middle-name" class="hide required-color error-message"
+            >Middle Name Cannot Be Empty</span
+          >
+        </div>
+
+    <div class="input-section">
+          <label>Citizenship<span class="required-color"></span></label>
+          <select  id="options">
+              <option></option>
+              <option>Filipino</option>
+              <option>Americano</option> 
+              <option>Japanese</option>  
+          </select>
+          <span id="Citizenship-name-error" class="hide required-color error-message">Invalid Input</span>
+          <span id="empty-citizenship" class="hide required-color error-message">Field is  required</span>
+    </div>
+          <div class="input-section">
+          <label>Month<span class="required-color"></span></label>
+          <select  id="options">
+              <option>January</option>
+              <option>February</option>
+              <option>March</option> 
+              <option>April</option>  
+          </select>
+          <span id="month-name-error" class="hide required-color error-message">Invalid Input</span>
+          <span id="empty-month" class="hide required-color error-message">Field is  required</span>
+    </div>
+    <div class="input-section">
+          <label>Day<span class="required-color"></span></label>
+          <select  id="options">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option> 
+              <option>4</option>  
+          </select>
+          <span id="day-name-error" class="hide required-color error-message">Invalid Input</span>
+          <span id="empty-day" class="hide required-color error-message">Field is  required</span>
+    </div>
+ <div class="input-section">
+          <label>Year<span class="required-color"></span></label>
+          <select  id="options">
+              <option>200</option>
+              <option>2001</option>
+              <option>2002</option> 
+              <option>2003</option>  
+          </select>
+          <span id="day-name-error" class="hide required-color error-message">Invalid Input</span>
+          <span id="empty-day" class="hide required-color error-message">Field is  required</span>
+    </div>
+    <button id="next-button">next</button>
+    </form>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
